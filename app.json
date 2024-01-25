@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "financa-facil",
+    "slug": "financa-facil",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
