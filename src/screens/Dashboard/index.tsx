@@ -1,12 +1,33 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { Container, Title } from "./style";
+import {Feather} from '@expo/vector-icons'
+import { 
+  Container, 
+  Header,
+  UserInfo,
+  Photo,
+  User,
+  UserGreeting,
+  UserName,
+  UserWrapper,
+  Icon
+ } from "./style";
 
 
 export function Dashboard() {
   return (
     <Container>
-      <Title>Dashboard</Title>
+      <Header>
+      <UserWrapper>
+        <UserInfo>
+          <Photo source={{uri: 'https://avatars.githubusercontent.com/u/131483292?v=4'}}/>
+          <User>
+            <UserGreeting>Olá,</UserGreeting>
+            <UserName>Carlos!</UserName>
+          </User>
+        </UserInfo>
+        <Icon name="power" />
+      </UserWrapper>
+      </Header>
     </Container>
   );
 }

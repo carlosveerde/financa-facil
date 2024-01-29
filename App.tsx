@@ -11,6 +11,9 @@ import {
 import theme from './src/global/styles/theme';
 import { Dashboard } from './src/screens/Dashboard';
 import SplashScreen from 'react-native-splash-screen';
+import { Text } from 'react-native';
+import AppLoading from 'expo-app-loading';
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -20,14 +23,15 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
-    return null;
+    return (<AppLoading/>);
   }
 
-
-
   return (
+    <>
+    <StatusBar style='light'/>   
     <ThemeProvider theme={theme}>
       <Dashboard />
     </ThemeProvider>
+    </>
   );
 }
