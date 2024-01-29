@@ -20,8 +20,10 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
-    return SplashScreen;
+    return null;
   }
+
+
 
   return (
     <ThemeProvider theme={theme}>
