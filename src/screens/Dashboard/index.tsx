@@ -11,7 +11,9 @@ import {
   UserName,
   UserWrapper,
   Icon,
-  HighlightCards
+  HighlightCards,
+  Transactions,
+  Title,
  } from "./style";
 
 
@@ -50,6 +52,9 @@ export function Dashboard() {
         lastTransaction="01 à 16 de abril" 
         />
       </HighlightCards>
+      <Transactions>
+        <Title>Listagem</Title>
+      </Transactions>
     </Container>
   );
 }
