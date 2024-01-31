@@ -1,6 +1,7 @@
 import React from "react";
 import {Feather} from '@expo/vector-icons'
 import { HighlightCard } from "../../components/HighlightCard";
+import { TransactionCard } from "../../components/TransactionCard";
 import { 
   Container, 
   Header,
@@ -54,6 +55,7 @@ export function Dashboard() {
       </HighlightCards>
       <Transactions>
         <Title>Listagem</Title>
+        <TransactionCard />
       </Transactions>
     </Container>
   );

@@ -44,6 +44,7 @@ export const UserGreeting = styled.Text`
     font-family: ${({theme}) => theme.fonts.regular};
     font-size: ${RFValue(18)}px;
     color: ${({theme}) => theme.colors.shape};
+    margin-bottom: -5px;
     
 `;
 
